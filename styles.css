@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  font-family: 'Source Sans Pro';
+}
+
+svg {
+
+    position: relative;
+    width: 95%;
+    margin: auto;
+    font-family: 'Courier New';
+
+}
+
+img {
+    width: 95%;
+}
+
+text {
+    font-family: 'Source Sans Pro', sans-serif;
+    fill: black;
+
+}
+
+h1 {
+    margin-top: 35px;
+    font-size: 100pt;
+    font-family: 'Amatic SC';
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 48pt;;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    float; right;
+}
+
+.navbar a {
+    color: black;
+    font-family: 'Amatic SC';
+    font-size: 20pt;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #f09285;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #f09285;
+}
+
+/* Style the header */
+.header {
+    background-image: url("img/tulip_pattern.jpg");
+    background-size: 500px 405px;
+    padding: 100px;
+    text-align: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 100%;
+    padding: 0px;
+}
+
+.column2 {
+    float: left;
+    width: 33%;
+    padding: 0px;
+}
+
+.column3 {
+     float: left;
+    width: 66%;
+    padding: 0px;
+}
+
+.row {
+    margin-left: 0px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-fluid {
+padding: 0px;
+
+}
+
+.container-fluid map {
+max-height: 1200px;
+
+
+}
+
+.modal {
+    display: none;
+    background-color: gray;
+    max-height: calc(100% - 100px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 10000;
+    overflow: auto;
+}
+
+.btn btn-primary btn-sm {
+}
+
+.btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #f09285;
+}
+
+.btn-primary{
+    background-color: #f09285;
+    border-color: #f09285;
+    position: relative;
+    z-index: 1000;
+    vertical-align: top;
+    font-family:'Amatic SC';
+    font-size: 16pt;
+    padding: 2px;
+}
+
+
+#nav-link {
+    font-family: 'Source Sans Pro';
+}
+
+#button-default {
+    position: absolute;
+    z-index: 1000;
+}
+
+
+#Trade_map {
+    display: none;
+}
+
+#Tulip_cycle {
+    display:none;
+}
+
+#Tulip_paths {
+display: show;
+
+}
+
+#Tulip_originalSpread_2_ {
+    display: none;
+}
+
+#originalSpread_x5F_button rect {
+    cursor: pointer;
+}
+
+#Tulip_cities {
+    display: show;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#Tulip_cities_labels {
+   font-family: 'Source Sans Pro';
+}
+
+#Tulip_x5F_cities_x5F_text {
+    z-index: 100;
+}
+
+#pie-chart{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+    /* Temp */
+
+/*    #Tulip_cities_labels, #Tulip_originalSpread_2_, #Tulip_cities_text, #Tulip_paths { display: none }
+
+    #Tulip_cities rect:hover { fill: red; }*/
+
+    #Tulip_cities_labels text { display: none; }

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+
+  <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="header" id="home">
+  <h1>A Flower's Journey</h1>
+</div>
+
+<nav id="navbar-example2" class="navbar fixed-top navbar-light bg-faded">
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav nav-pills">
+   <li class="nav-item">
+      <a class="nav-link" href="#home">home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#intro">intro</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">tulips</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#map">map</a>
+        <a class="dropdown-item" href="#map">growth cycle</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">floriculture today</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#trade_map">trade map</a>
+        <a class="dropdown-item" href="#exports">exports</a>
+        <a class="dropdown-item" href="#three">imports</a>
+      </div>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#about">about</a>
+    </li>
+  </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+  
+  <div class="row">
+    <div class="container-fluid" id="intro">
+
+      <div class="column2">
+        <h2 style="margin-top:150px"> "How did I <br> get there?" </h2>
+      </div>
+
+      <div class="column3">
+        <p style="margin-top:170px; margin-bottom: 500px; font-size: 16pt"> Nowadays, it's easy to fill our gardens with floweres from around the world and some flowers, such as the tulip, seem incredibly mundane. Tracing the journey of today's most common flowers tells the story of the imperial botany project of the 15th and 16th centuries and reveals how far these flowers have traveled from their native climates. </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container-fluid" id="map">
+
+      <button type='button' class="btn btn-primary btn-sm" id="narrative">Narrative</button> <!-- Button to hide or show modal -->
+      <button type='button' class="btn btn-primary btn-sm" id="native_habitat">Native Habitat</button>
+
+      <div class="column" id="svg-main">
+      </div>
+
+       <div class='modal'>
+        <button style="float: right" class='close-button'>&times;</button>   <!-- A special "x" character (the multiply sign) used in close buttons -->  
+        <h1 style="font-size: 24pt; text-align: center; color: white";>The Tulips' Journey</h1>
+        <p style="color:white; font-size: 12pt; font-weight: 200;" class="modal-body">The tulip is native to the Tien Shan mountain region. Records show it was cultivated in Istanbul as early as 1055. In 1554, Ogier Ghiselih de Busbecq, the ambassador to the sultan of Turkey, sent seeds to Vienna, where Carlos Clusius headed the botanical garden. Clusius took the seeds to Leiden in the Netherlands, where he laid out the physic garden at the city's new university. Entrepreneurs began establishing nurseries around the Netherlands at the start of the 17th century and soon tulip collecting took off. Tulips were exported to Berlin, Paris, and the Kew gardens in London. Within a year, the price of tulips more than doubled and speculators took advantage of the market. By the 1620s, single-colored varieties were selling for 12 florins a pound, while the average annal income was about 150 florins. By 1637, sellers began to outnumber buyers and the market collapsed. The Netherlands remains one of the largest exporters of bulbs today. The tulip came to the United States around 1698, as Dutch emigrants moved to the US.</p>
+
+
+  </div>
+
+    </div>
+  </div>
+
+ 
+  <div class="row">
+    <div class="container-fluid" id="trade_map">
+          <h2 style="font-size:24pt"> World Floriculture Map (2016) </h2>
+          <img src="img/trade-map.svg">
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="container-fluid" id="exports">
+      <svg id="pie-chart" width="864" height="450"></svg>
+    </div>
+
+  </div>
+
+  </div>
+
+<!--   <div class="row">
+
+    <div class="container-fluid" id="imports">
+      <svg id="pie-chart2" width="" height="500"></svg>
+
+    </div>
+
+  </div> -->
+
+    <div class="row">
+    <div class="container-fluid" id="about">
+
+      <div class="column2">
+        <h2 style="margin-top:175px; font-size: 36pt"> About this project</h2>
+      </div>
+
+      <div class="column3">
+        <p style="margin-top:170px; margin-bottom: 500px; font-size: 14pt; font-weight: 200;""> This map was created in the Scripting Civic Engagement seminar at the University of Virginia (Fall 2017), taught by Andrea Hansen Phillips. Data courtsey of "The Plant Hunters: The Adventures of the World's Greatest Botanical Explorers" by Carolyn Fry and Rabobank Food & Agribusiness Research and Advisory. For questions or to improve this map, contact <a href='mailto:psv6ba@virginia.edu'>Pia von Barby, MLA 2018.</a></p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="svgInteractions.js"></script>
+
+</body>
+
+
+</html>
